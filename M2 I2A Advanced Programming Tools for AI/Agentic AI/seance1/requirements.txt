@@ -1,0 +1,10 @@
+# Séance 1 — Du LLM à l'agent outillé
+langgraph>=1.0
+langchain>=1.0
+langchain-openai>=1.0
+pydantic>=2
+python-dotenv
+jupyter
+arxiv
+pypdf
+requests
