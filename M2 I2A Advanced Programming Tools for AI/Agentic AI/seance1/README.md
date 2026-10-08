@@ -1,9 +1,8 @@
 # Séance 1 — Du LLM à l'agent outillé
-### Cours « Agentic AI » — M2 I2A
+**Agentic AI** · Master 2 I2A · Université Paris 8<br>
+**Enseignant :** Pr Mehdi Ammi — Laboratoire LIASD (EA 4383)
 
-**Auteur :** Mehdi Ammi — Université Paris 8, laboratoire LIASD<br>
-**Conception :** cours conçu, élaboré et mis en place par Mehdi Ammi<br>
-**Mise en forme :** réalisée avec l'assistance de Claude Code (Anthropic)
+*Note sur l'usage de l'IA : le contenu pédagogique (objectifs, progression, exercices, solutions) a été conçu par l'auteur. Claude Code (Anthropic) a été utilisé pour la mise en forme des supports.*
 
 ## Contenu du dossier
 
