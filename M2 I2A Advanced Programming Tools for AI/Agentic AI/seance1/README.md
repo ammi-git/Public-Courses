@@ -2,7 +2,8 @@
 ### Cours « Agentic AI » — M2 I2A
 
 **Auteur :** Mehdi Ammi — Université Paris 8, laboratoire LIASD<br>
-**Conception :** supports conçus avec l'assistance de Claude Code (Anthropic)
+**Conception :** cours conçu, élaboré et mis en place par Mehdi Ammi<br>
+**Mise en forme :** réalisée avec l'assistance de Claude Code (Anthropic)
 
 ## Contenu du dossier
 
