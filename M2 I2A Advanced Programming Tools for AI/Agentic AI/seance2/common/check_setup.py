@@ -2,7 +2,7 @@
 import importlib
 import sys
 
-PACKAGES = ['langgraph', 'langchain', 'langchain_openai', 'pydantic', 'dotenv', 'arxiv', 'pypdf', 'chromadb', 'sentence_transformers', 'matplotlib']
+PACKAGES = ['langgraph', 'langchain', 'langchain_openai', 'pydantic', 'dotenv', 'arxiv', 'pypdf', 'chromadb', 'matplotlib']
 
 ok = True
 for p in PACKAGES:

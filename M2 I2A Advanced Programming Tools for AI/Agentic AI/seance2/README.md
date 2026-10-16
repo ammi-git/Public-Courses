@@ -9,7 +9,7 @@
 ```
 seance2/
 ├── README.md                 ce fichier
-├── S2_memoire_rag_graphe.ipynble notebook de la séance
+├── S2_memoire_rag_graphe.ipynb  le notebook de la séance
 ├── data/
 │   ├── corpus/               articles téléchargés par le notebook
 │   └── livrable2/            PDF du livrable 2
@@ -18,6 +18,7 @@ seance2/
 ├── .gitignore                empêche de publier vos clés (.env)
 └── common/
     ├── llm.py                accès au LLM (local ou API)
+    ├── embeddings.py         embeddings (sentence-transformers ou Ollama)
     └── check_setup.py        vérification de l'installation
 ```
 
@@ -35,15 +36,16 @@ jupyter lab S2_memoire_rag_graphe.ipynb
 
 Le fichier `.env` doit se trouver **dans le dossier de la séance**, à côté de `common/`. Il contient vos clés : **ne le commitez jamais**.
 
-## Mac à processeur Intel
+## Moteur d'embeddings (Mac Intel)
 
-PyTorch s'arrête à la version 2.2.2 sur ces machines. Si l'import de `sentence_transformers` échoue (erreur NumPy ou `name 'nn' is not defined`) :
+Par défaut, les embeddings sont calculés avec `sentence-transformers` (PyTorch). Sur un **Mac à processeur Intel**, PyTorch est bloqué en version 2.2.2 et l'import de `sentence_transformers` peut échouer (erreur NumPy ou `name 'nn' is not defined`). Utilisez alors Ollama, sans PyTorch :
 
 ```bash
-python -m pip install "numpy<2" "transformers<4.50" "sentence-transformers<4"
+ollama pull paraphrase-multilingual
+echo "EMBEDDING_BACKEND=ollama" >> .env
 ```
 
-Au premier lancement, le modèle d'embedding (environ 500 Mo) est téléchargé puis mis en cache.
+puis redémarrez le noyau du notebook. Le choix est lu par `common/embeddings.py`.
 
 ## Livrable
 
