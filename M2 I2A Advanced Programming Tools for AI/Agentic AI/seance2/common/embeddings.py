@@ -26,14 +26,31 @@ MODELE_OLLAMA = os.getenv("EMBEDDING_MODEL", "paraphrase-multilingual")
 URL_OLLAMA = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
 _modele_st = None
+_ollama_ok = False
+
+
+def _verifier_ollama() -> None:
+    """Vérifie une fois qu'Ollama répond et que le modèle d'embedding est téléchargé."""
+    global _ollama_ok
+    if _ollama_ok:
+        return
+    try:
+        modeles = requests.get(f"{URL_OLLAMA}/api/tags", timeout=5).json().get("models", [])
+    except requests.RequestException as e:
+        raise RuntimeError(f"Ollama ne répond pas sur {URL_OLLAMA} : lancez « ollama serve ».") from e
+    noms = {m["name"].split(":")[0] for m in modeles}
+    if MODELE_OLLAMA.split(":")[0] not in noms:
+        raise RuntimeError(f"Modèle absent : lancez « ollama pull {MODELE_OLLAMA} » dans un terminal.")
+    _ollama_ok = True
 
 
 def encoder(textes: list[str]) -> np.ndarray:
     """Renvoie une matrice (n_textes, dimension) de vecteurs normalisés."""
     textes = list(textes)
     if BACKEND == "ollama":
+        _verifier_ollama()
         r = requests.post(f"{URL_OLLAMA}/api/embed",
-                          json={"model": MODELE_OLLAMA, "input": textes}, timeout=300)
+                          json={"model": MODELE_OLLAMA, "input": textes}, timeout=(5, 120))
         r.raise_for_status()
         vecteurs = np.array(r.json()["embeddings"], dtype=float)
     else:
