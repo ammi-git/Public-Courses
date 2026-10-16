@@ -20,10 +20,10 @@ Chaque notebook contient : les notions, les exercices guidés, les exercices non
 
 ```bash
 git clone <url-du-depot>
-cd agentic-ai-m2
+cd agentic-ai-m2/seance1          # chaque séance est un dossier autonome
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env      # puis choisir l'option A ou B
+python -m pip install -r requirements.txt
+cp .env.example .env              # puis choisir l'option A ou B
 python common/check_setup.py
 jupyter lab
 ```
@@ -44,9 +44,12 @@ Tout le code passe par `common/llm.py` : changer de modèle se fait **uniquement
 ## Structure
 
 ```
-common/          accès au LLM et vérification de l'installation
 seance1/         notebook S1
 seance2/         notebook S2 + data/ (corpus, PDF du livrable 2)
 seance3/         notebook S3 + serveurs MCP (démo et squelette du livrable 3)
 seance4/         notebook S4
+
+Chaque dossier de séance est autonome : common/ (accès au LLM, vérification),
+requirements.txt, .env.example, .gitignore et README.md. Le fichier .env se place
+dans le dossier de la séance (copiez celui de la séance précédente).
 ```
