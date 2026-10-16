@@ -1,0 +1,26 @@
+# Cœur du cours
+langgraph>=1.0
+langchain>=1.0
+langchain-openai>=1.0
+pydantic>=2
+python-dotenv
+jupyter
+
+# Outils (S1)
+arxiv
+pypdf
+requests
+
+# Mémoire et RAG (S2)
+chromadb
+sentence-transformers
+matplotlib
+rank-bm25          # exercice supplémentaire S2
+
+# MCP (S3)
+fastmcp
+langchain-mcp-adapters
+
+# Évaluation et sécurité (S4)
+langfuse
+reportlab
