@@ -34,6 +34,22 @@ python common/check_setup.py  # doit afficher « OK »
 jupyter lab S2_memoire_rag_graphe.ipynb
 ```
 
+## Environnement dédié (recommandé)
+
+Installez le cours dans un **environnement séparé** de vos autres projets : sinon, l'installation met à jour des bibliothèques partagées (`mcp`, `numpy`, `protobuf`…) et peut casser d'autres outils.
+
+```bash
+# Avec conda (Anaconda)
+conda create -n agentic python=3.11 -y
+conda activate agentic
+python -m pip install -r requirements.txt ipykernel
+```
+
+Puis choisissez le noyau **agentic** dans Jupyter ou VS Code (*Select Kernel*). Avec `venv`, utilisez la commande `python -m venv .venv` ci-dessus.
+
+> Les messages `pip's dependency resolver ... incompatible` sont des **avertissements** sur d'autres paquets de l'environnement : l'installation a réussi si la dernière ligne n'est pas `ERROR: Could not install`.
+
+
 Le fichier `.env` doit se trouver **dans le dossier de la séance**, à côté de `common/`. Il contient vos clés : **ne le commitez jamais**.
 
 ## Moteur d'embeddings (Mac Intel)

@@ -18,8 +18,8 @@ matplotlib
 rank-bm25          # exercice supplémentaire S2
 
 # MCP (S3)
-fastmcp
-langchain-mcp-adapters
+mcp==1.30.0        # SDK MCP officiel (contient FastMCP) ; langchain-mcp-adapters ne suit pas encore mcp 2.x
+langchain-mcp-adapters==0.3.2
 
 # Évaluation et sécurité (S4)
 langfuse

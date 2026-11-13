@@ -29,6 +29,22 @@ python common/check_setup.py  # doit afficher « OK »
 jupyter lab S1_agent_outille.ipynb
 ```
 
+## Environnement dédié (recommandé)
+
+Installez le cours dans un **environnement séparé** de vos autres projets : sinon, l'installation met à jour des bibliothèques partagées (`mcp`, `numpy`, `protobuf`…) et peut casser d'autres outils.
+
+```bash
+# Avec conda (Anaconda)
+conda create -n agentic python=3.11 -y
+conda activate agentic
+python -m pip install -r requirements.txt ipykernel
+```
+
+Puis choisissez le noyau **agentic** dans Jupyter ou VS Code (*Select Kernel*). Avec `venv`, utilisez la commande `python -m venv .venv` ci-dessus.
+
+> Les messages `pip's dependency resolver ... incompatible` sont des **avertissements** sur d'autres paquets de l'environnement : l'installation a réussi si la dernière ligne n'est pas `ERROR: Could not install`.
+
+
 ## Choisir son modèle
 
 - **Option A — local (gratuit)** : installer [Ollama](https://ollama.com), puis `ollama pull qwen3:8b`. 16 Go de RAM conseillés.

@@ -28,6 +28,22 @@ python common/check_setup.py
 jupyter lab
 ```
 
+## Environnement dédié (recommandé)
+
+Installez le cours dans un **environnement séparé** de vos autres projets : sinon, l'installation met à jour des bibliothèques partagées (`mcp`, `numpy`, `protobuf`…) et peut casser d'autres outils.
+
+```bash
+# Avec conda (Anaconda)
+conda create -n agentic python=3.11 -y
+conda activate agentic
+python -m pip install -r requirements.txt ipykernel
+```
+
+Puis choisissez le noyau **agentic** dans Jupyter ou VS Code (*Select Kernel*). Avec `venv`, utilisez la commande `python -m venv .venv` ci-dessus.
+
+> Les messages `pip's dependency resolver ... incompatible` sont des **avertissements** sur d'autres paquets de l'environnement : l'installation a réussi si la dernière ligne n'est pas `ERROR: Could not install`.
+
+
 ## Choisir son modèle : local ou API
 
 Tout le code passe par `common/llm.py` : changer de modèle se fait **uniquement** dans `.env`.

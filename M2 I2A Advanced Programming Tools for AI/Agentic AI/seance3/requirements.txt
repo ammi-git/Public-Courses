@@ -13,5 +13,5 @@ chromadb
 sentence-transformers
 
 # MCP
-fastmcp
-langchain-mcp-adapters
+mcp==1.30.0        # SDK MCP officiel (contient FastMCP) ; langchain-mcp-adapters ne suit pas encore mcp 2.x
+langchain-mcp-adapters==0.3.2

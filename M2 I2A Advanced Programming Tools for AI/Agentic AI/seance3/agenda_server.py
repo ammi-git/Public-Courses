@@ -1,12 +1,12 @@
 """Livrable 3 — serveur MCP « agenda ».
 
 À compléter : exposer list_events et add_event sur le fichier agenda.json.
-Tester avec : fastmcp dev agenda_server.py
+Tester avec : npx @modelcontextprotocol/inspector python agenda_server.py
 """
 import json
 from pathlib import Path
 
-from fastmcp import FastMCP
+from mcp.server.fastmcp import FastMCP  # SDK MCP officiel
 
 AGENDA = Path(__file__).parent / "agenda.json"
 mcp = FastMCP("agenda")

@@ -1,14 +1,14 @@
 """Serveur MCP minimal (démonstration en séance).
 
-Tester :  fastmcp dev mcp_server_demo.py      (ouvre l'inspecteur MCP)
+Tester :  npx @modelcontextprotocol/inspector python mcp_server_demo.py      (ouvre l'inspecteur MCP)
 Lancer :  python mcp_server_demo.py           (transport stdio)
 """
-from fastmcp import FastMCP
+from mcp.server.fastmcp import FastMCP  # SDK MCP officiel
 
 mcp = FastMCP("demo")
 
 
-@mcp.tool
+@mcp.tool()
 def compter_mots(texte: str) -> int:
     """Compte le nombre de mots d'un texte."""
     return len(texte.split())
