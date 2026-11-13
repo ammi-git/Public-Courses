@@ -1,0 +1,17 @@
+# Séance 3 — Patterns, validation humaine, MCP et multi-agents
+langgraph>=1.0
+langchain>=1.0
+langchain-openai>=1.0
+pydantic>=2
+python-dotenv
+jupyter
+ipywidgets
+arxiv
+pypdf
+requests
+chromadb
+sentence-transformers
+
+# MCP
+fastmcp
+langchain-mcp-adapters

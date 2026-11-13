@@ -1,0 +1,7 @@
+{
+  "evenements": [
+    {"date": "2026-11-16", "debut": "09:00", "fin": "16:00", "titre": "Cours Agentic AI"},
+    {"date": "2026-11-17", "debut": "14:00", "fin": "17:00", "titre": "TD apprentissage automatique"},
+    {"date": "2026-11-19", "debut": "10:00", "fin": "12:00", "titre": "Réunion de projet"}
+  ]
+}
