@@ -18,6 +18,7 @@ load_dotenv()
 
 def get_llm(temperature: float = 0.0, **kwargs) -> ChatOpenAI:
     """Retourne le modèle de chat configuré dans le fichier .env."""
+    kwargs.setdefault("timeout", 180)  # un appel bloqué lève une erreur au lieu d'attendre indéfiniment
     model = os.getenv("LLM_MODEL")
     if not model:
         raise RuntimeError(
