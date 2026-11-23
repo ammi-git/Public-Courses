@@ -12,13 +12,33 @@ Concevoir un assistant qui répond à des questions en langage naturel sur un do
 
 Tous les outils de l'assistant sont servis par **votre serveur MCP**.
 
-Exemples de demandes, pour un projet sur les vélos en libre-service :
+## Exemples de questions que l'assistant doit traiter
 
-| Demande | Branche |
+Pour un projet sur les **vélos en libre-service** :
+
+| Branche | Exemples de questions |
 | --- | --- |
-| « Que signifie la colonne `capacity` ? » | documentation |
-| « Quelle est la station la plus utilisée le dimanche ? » | analyse |
-| « Montre l'évolution des locations par heure et par arrondissement » | visualisation |
+| Documentation | « Que signifie la colonne `capacity` ? » · « Comment l'opérateur définit-il un trajet ? Cite ta source. » · « Que dit le rapport annuel sur l'usage le week-end ? » |
+| Analyse | « Quelle est la station la plus utilisée le dimanche ? » · « Quelle est la durée moyenne d'un trajet par arrondissement ? » · « Combien de trajets dépassent 30 minutes ? » |
+| Visualisation | « Montre l'évolution des locations par heure. » · « Compare la durée des trajets entre vélos mécaniques et électriques. » · « Fais un dashboard qui résume l'usage sur la semaine. » |
+
+Pour un projet sur les **annonces Airbnb d'une ville** :
+
+| Branche | Exemples de questions |
+| --- | --- |
+| Documentation | « Que signifie `availability_365` ? » · « Comment Inside Airbnb estime-t-il le taux d'occupation ? » |
+| Analyse | « Quel quartier a le prix médian le plus élevé ? » · « Quelle part des annonces sont des logements entiers ? » |
+| Visualisation | « Compare les prix par type de logement. » · « Montre la relation entre le nombre d'avis et le prix. » |
+
+Pour un projet sur les **offres d'emploi** :
+
+| Branche | Exemples de questions |
+| --- | --- |
+| Documentation | « Comment le référentiel définit-il un poste de data analyst ? » · « Que dit l'étude sur le télétravail ? » |
+| Analyse | « Quel est le salaire moyen par type de contrat ? » · « Quelle ville publie le plus d'offres ? » |
+| Visualisation | « Montre la répartition des salaires par niveau d'expérience. » · « Fais un dashboard des offres par secteur et par ville. » |
+
+Vos propres questions figurent dans la fiche de choix des données. Lors de la démonstration, l'enseignant posera **ses propres questions**, du même type (voir [08 — Démonstration et questions](08_demonstration.md)).
 
 ## 2. Composants à réaliser
 

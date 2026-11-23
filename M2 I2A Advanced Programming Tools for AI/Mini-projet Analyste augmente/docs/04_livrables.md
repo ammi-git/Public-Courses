@@ -8,6 +8,8 @@
 2. le **rapport** en PDF ;
 3. l'archive du dossier `scenarios/` si les traces sont volumineuses.
 
+Puis vous présentez votre projet lors d'une **démonstration individuelle de 15 minutes** : voir [08 — Démonstration et questions](08_demonstration.md).
+
 ## 1. Le code
 
 - Le dépôt suit la structure du squelette (`src/`, `data/`, `scenarios/`).

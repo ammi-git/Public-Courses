@@ -38,6 +38,10 @@ Le projet donne **deux notes indépendantes sur 20**. Chaque composant compte po
 | Présent mais incomplet, ou fonctionne partiellement | 50 % |
 | Conforme à l'attendu | 100 % |
 
+## Démonstration
+
+Les points sont **confirmés lors de la démonstration** : l'enseignant pose ses propres questions à l'assistant, puis interroge l'étudiant sur son code et ses choix. Un critère dont le fonctionnement ou la compréhension n'est pas démontré peut être ramené à 50 % ou à 0 % de ses points. Exemples de questions : [08 — Démonstration et questions](08_demonstration.md).
+
 ## Notions évaluées
 
 | Cours | Notions |

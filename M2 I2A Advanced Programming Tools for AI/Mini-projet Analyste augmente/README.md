@@ -12,7 +12,7 @@
 
 Vous construisez un assistant qui répond en langage naturel sur un domaine de votre choix : il **cherche dans une documentation** et cite ses sources, **analyse un dataset** pour répondre à une question chiffrée, et **produit automatiquement un dashboard**. Tous ses outils sont servis par **votre serveur MCP**.
 
-Ce projet donne **deux notes sur 20** : une pour **Agentic DataViz**, une pour **Agentic AI**.
+Ce projet donne **deux notes sur 20** : une pour **Agentic DataViz**, une pour **Agentic AI**. Il se termine par une **démonstration en direct** : l'enseignant pose ses propres questions à votre assistant, puis vous interroge sur vos choix (voir [08 — Démonstration et questions](docs/08_demonstration.md)).
 
 ## Architecture
 
@@ -43,6 +43,7 @@ flowchart TD
 | [05 — Évaluation](docs/05_evaluation.md) | les deux grilles (DataViz et Agentic AI) et les attendus |
 | [06 — Guide technique](docs/06_guide_technique.md) | installation, versions, erreurs fréquentes |
 | [07 — Notions et séances](docs/07_notions.md) | où revoir chaque notion dans les deux cours |
+| [08 — Démonstration et questions](docs/08_demonstration.md) | déroulement de la démonstration, exemples de questions posées à l'assistant et à l'étudiant |
 
 ## Démarrage rapide
 
@@ -87,6 +88,7 @@ mini-projet-analyste-augmente/
 | Validation de la fiche de choix des données | *à préciser* |
 | Séance de travail encadrée | *à préciser* |
 | Dépôt sur Moodle (lien du dépôt Git, rapport PDF, traces) | *à préciser* |
+| Démonstration individuelle (15 min) | *à préciser* |
 
 ## Règles essentielles
 
