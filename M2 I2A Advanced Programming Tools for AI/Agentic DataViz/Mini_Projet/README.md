@@ -199,8 +199,12 @@ Le notebook modèle fourni contient 10 sections et une checklist. Les cellules m
 
 - « Montre le tool que l'agent a appelé pour cette réponse. Pourquoi celui-là ? »
 - « Pose une question hors de ton jeu de données. Que se passe-t-il ? »
-- « Pourquoi ton tool retourne-t-il une chaîne et pas un DataFrame ? »
+- « Pourquoi ton tool MCP retourne-t-il une chaîne et pas un DataFrame ? »
+- « Quelle est la différence entre un tool `@tool` local et un tool exposé par ton serveur MCP ? »
+- « Qu'est-ce qui circule entre ton client et ton serveur MCP, et par quel transport ? »
+- « Que fait ton system prompt, et quel comportement de l'agent impose-t-il ? »
 - « Relance la question de suivi sans la mémoire. Qu'est-ce qui casse ? »
-- « Ton agent a-t-il déjà inventé un chiffre ? Comment l'empêches-tu ? »
+- « Quelle différence y a-t-il entre appeler une API REST et appeler un tool MCP ? »
+- « Décris le chemin d'une question jusqu'au graphique affiché. »
+- « Pourquoi as-tu choisi DuckDB pour lire ton jeu de données plutôt que pandas seul ? »
 - « Ton jeu passe de 1 000 à 1 000 000 de lignes : qu'est-ce qui change ? »
-- « Montre-moi comment ton SQL se protège contre une entrée malveillante. »
