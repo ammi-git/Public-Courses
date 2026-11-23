@@ -1,0 +1,25 @@
+# Cœur
+langgraph>=1.0
+langchain>=1.0
+langchain-openai>=1.0
+pydantic>=2
+python-dotenv
+requests
+
+# Données et visualisation
+pandas
+plotly
+streamlit
+
+# RAG
+chromadb
+sentence-transformers
+pypdf
+
+# MCP (versions testées ensemble : langchain-mcp-adapters ne suit pas encore mcp 2.x)
+mcp==1.30.0
+langchain-mcp-adapters==0.3.2
+
+# Notebook (facultatif)
+jupyter
+ipykernel
