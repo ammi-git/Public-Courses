@@ -44,6 +44,7 @@ def mon_outil(...): ...
 | `McpError: Connection closed` | le serveur MCP plante au démarrage | le lancer à la main (`python src/mcp_server.py`) pour lire son erreur |
 | `ImportError: cannot import name 'RequestContext'` | `mcp` en version 2.x | `pip install "mcp==1.30.0"`, puis redémarrer le noyau |
 | Le serveur MCP ne trouve pas ses bibliothèques | il est lancé avec un autre Python | lancer le serveur avec `sys.executable` et un chemin absolu |
+| `UnsupportedOperation: fileno` (Windows, dans Jupyter) | la sortie d'erreur du notebook n'est pas un vrai fichier, or le client MCP en a besoin pour lancer le serveur | avant de créer le client : `sys.stderr = open("mcp_stderr.log", "a", encoding="utf-8")` |
 | `APIConnectionError: Connection error` | le LLM ne répond pas | lancer Ollama (`ollama serve`) ou vérifier `LLM_BASE_URL` |
 | `LLM_MODEL est vide` | `.env` absent ou non relu | créer `.env` à la racine du projet, redémarrer le noyau |
 | `ValidationError` sur une sortie structurée | le modèle répond dans un mauvais format | utiliser `src/sortie.py` (`structurer`), qui réessaie et valide |

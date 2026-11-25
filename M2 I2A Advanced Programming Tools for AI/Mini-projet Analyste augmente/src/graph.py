@@ -19,6 +19,13 @@ sys.path.insert(0, str(SRC))
 from llm import get_llm  # noqa: E402
 from sortie import structurer  # noqa: E402,F401
 
+if sys.platform == "win32":
+    # Windows + Jupyter : le client MCP a besoin d'une sortie d'erreur qui soit un vrai fichier
+    try:
+        sys.stderr.fileno()
+    except Exception:  # noqa: BLE001
+        sys.stderr = open(SRC.parent / "mcp_stderr.log", "a", encoding="utf-8")
+
 CLIENT_MCP = MultiServerMCPClient({
     "analyste": {"command": sys.executable, "args": [str(SRC / "mcp_server.py")], "transport": "stdio"},
 })

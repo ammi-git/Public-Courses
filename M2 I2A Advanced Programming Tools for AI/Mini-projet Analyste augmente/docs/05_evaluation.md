@@ -38,9 +38,22 @@ Le projet donne **deux notes indépendantes sur 20**. Chaque composant compte po
 | Présent mais incomplet, ou fonctionne partiellement | 50 % |
 | Conforme à l'attendu | 100 % |
 
-## Démonstration
+## Démonstration et questions orales
 
-Les points sont **confirmés lors de la démonstration** : l'enseignant pose ses propres questions à l'assistant, puis interroge l'étudiant sur son code et ses choix. Un critère dont le fonctionnement ou la compréhension n'est pas démontré peut être ramené à 50 % ou à 0 % de ses points. Exemples de questions : [08 — Démonstration et questions](08_demonstration.md).
+Les points des deux grilles sont **confirmés lors de la démonstration**, en deux temps :
+
+1. **Questions posées à l'assistant.** L'enseignant pose ses propres questions, sur vos données, pour vérifier que chaque composant fonctionne en dehors de vos scénarios préparés.
+2. **Questions posées à l'étudiant.** L'enseignant choisit plusieurs questions dans la [liste des 20 questions](08_demonstration.md#2-questions-posées-à-létudiant). Chacune est rattachée à un cours (DataViz ou Agentic AI) et à la notion du critère correspondant.
+
+**Règle d'application :**
+
+| Constat pendant la démonstration | Effet sur le critère concerné |
+| --- | --- |
+| Le composant fonctionne et la question reçoit une réponse correcte | points conservés |
+| Le composant fonctionne mais la notion n'est pas comprise, ou l'inverse | ramené à 50 % |
+| Le composant ne fonctionne pas et la notion n'est pas comprise | ramené à 0 % |
+
+Une question rattachée aux deux cours (bornage des boucles et des agents) compte pour les deux notes.
 
 ## Notions évaluées
 
