@@ -1,0 +1,5 @@
+[
+  {"id": "RES001", "nom": "Nadia Benali", "adresse": "12 rue de la République", "zone": "Centre", "immatriculation": "GA-123-BC", "carte_resident": {"active": true, "fin_validite": "2027-03-31"}},
+  {"id": "RES002", "nom": "Thomas Leroy", "adresse": "5 boulevard Anatole-France", "zone": "Pleyel", "immatriculation": "FX-456-DE", "carte_resident": {"active": false, "fin_validite": "2026-06-30"}},
+  {"id": "RES003", "nom": "Julie Nguyen", "adresse": "3 place Victor-Hugo", "zone": "Centre", "immatriculation": "HB-789-FG", "carte_resident": null}
+]

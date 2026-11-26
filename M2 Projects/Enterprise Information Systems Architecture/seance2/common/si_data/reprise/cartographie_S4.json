@@ -1,0 +1,157 @@
+{
+  "titre": "SI de la Ville de Saint-Denis — point de reprise après la séance 4",
+  "couches": {
+    "metier": [
+      {
+        "nom": "État civil",
+        "type": "existant"
+      },
+      {
+        "nom": "Inscription cantine et périscolaire",
+        "type": "existant"
+      },
+      {
+        "nom": "Stationnement résident",
+        "type": "existant"
+      },
+      {
+        "nom": "Signalements voirie",
+        "type": "existant"
+      },
+      {
+        "nom": "Accueil du public",
+        "type": "existant"
+      },
+      {
+        "nom": "Démarches confiées à l'IA (priorisées)",
+        "type": "ia",
+        "seance": "S2"
+      }
+    ],
+    "fonctionnelle": [
+      {
+        "nom": "Gestion des dossiers usagers",
+        "type": "existant"
+      },
+      {
+        "nom": "Facturation",
+        "type": "existant"
+      },
+      {
+        "nom": "Relation citoyen",
+        "type": "existant"
+      },
+      {
+        "nom": "Interventions techniques",
+        "type": "existant"
+      },
+      {
+        "nom": "Gestion documentaire",
+        "type": "existant"
+      },
+      {
+        "nom": "Réponse aux questions des habitants",
+        "type": "ia",
+        "seance": "S2"
+      },
+      {
+        "nom": "Traitement des demandes de cantine",
+        "type": "ia",
+        "seance": "S2"
+      }
+    ],
+    "applicative": [
+      {
+        "nom": "État civil SD",
+        "type": "existant"
+      },
+      {
+        "nom": "État civil Pierrefitte",
+        "type": "doublon"
+      },
+      {
+        "nom": "Portail famille SD",
+        "type": "existant"
+      },
+      {
+        "nom": "Portail famille Pierrefitte",
+        "type": "doublon"
+      },
+      {
+        "nom": "Facturation enfance SD",
+        "type": "existant"
+      },
+      {
+        "nom": "Facturation enfance Pierrefitte",
+        "type": "doublon"
+      },
+      {
+        "nom": "Gestion stationnement",
+        "type": "existant"
+      },
+      {
+        "nom": "GRC SD",
+        "type": "existant"
+      },
+      {
+        "nom": "Tableur demandes Pierrefitte",
+        "type": "doublon"
+      },
+      {
+        "nom": "Interventions (Plaine Commune)",
+        "type": "partage"
+      },
+      {
+        "nom": "GED",
+        "type": "existant"
+      },
+      {
+        "nom": "Site de la ville",
+        "type": "existant"
+      },
+      {
+        "nom": "Assistant RAG des démarches",
+        "type": "ia",
+        "seance": "S4"
+      }
+    ],
+    "donnees": [
+      {
+        "nom": "Base des usagers",
+        "type": "existant"
+      },
+      {
+        "nom": "Tarifs et quotients familiaux",
+        "type": "existant"
+      },
+      {
+        "nom": "Règlements, guides, délibérations",
+        "type": "existant"
+      },
+      {
+        "nom": "Annuaire des agents",
+        "type": "existant"
+      },
+      {
+        "nom": "Base adresses (Plaine Commune)",
+        "type": "partage"
+      },
+      {
+        "nom": "Base vectorielle (index des documents)",
+        "type": "ia",
+        "seance": "S3"
+      },
+      {
+        "nom": "Corpus documentaire qualifié",
+        "type": "ia",
+        "seance": "S3"
+      },
+      {
+        "nom": "Modèle de langage (local ou API)",
+        "type": "ia",
+        "seance": "S4"
+      }
+    ],
+    "gouvernance": []
+  }
+}

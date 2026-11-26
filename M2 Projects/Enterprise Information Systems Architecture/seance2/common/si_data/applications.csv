@@ -1,0 +1,21 @@
+id,nom,origine,domaine,fonction,couche,annee_mise_en_service,hebergement,utilisateurs,satisfaction,cout_annuel_keur,echanges_avec,statut
+APP01,État civil SD,Saint-Denis,État civil,Actes de naissance / mariage / décès,applicative,2009,Serveur municipal,25,2,38,APP10;APP12,à moderniser
+APP02,État civil Pierrefitte,Pierrefitte,État civil,Actes de naissance / mariage / décès,applicative,2012,Serveur municipal,8,3,14,APP11,doublon fusion
+APP03,Portail famille SD,Saint-Denis,Enfance,Inscriptions cantine et périscolaire,applicative,2016,Cloud éditeur,40,3,52,APP05;APP13,en service
+APP04,Portail famille Pierrefitte,Pierrefitte,Enfance,Inscriptions cantine et périscolaire,applicative,2014,Serveur municipal,12,2,19,APP06,doublon fusion
+APP05,Facturation enfance SD,Saint-Denis,Finances,Facturation cantine et activités,applicative,2011,Serveur municipal,15,2,27,APP03;APP14,à moderniser
+APP06,Facturation enfance Pierrefitte,Pierrefitte,Finances,Facturation cantine et activités,applicative,2010,Serveur municipal,5,2,11,APP04,doublon fusion
+APP07,Gestion stationnement,Saint-Denis,Mobilité,Cartes résident et abonnements,applicative,2018,Cloud éditeur,10,3,24,APP12;APP20,en service
+APP08,GRC SD,Saint-Denis,Relation citoyen,Suivi des demandes des habitants,applicative,2015,Cloud éditeur,60,2,45,APP12;APP09,à moderniser
+APP09,Gestion des interventions,Plaine Commune,Voirie,Signalements et interventions techniques,applicative,2019,Cloud Plaine Commune,80,3,0,APP08;APP20,partagé EPT
+APP10,GED,Saint-Denis,Documents,Archivage et gestion documentaire,applicative,2013,Serveur municipal,120,2,31,APP01;APP08,en service
+APP11,Tableur suivi demandes Pierrefitte,Pierrefitte,Relation citoyen,Suivi des demandes (fichier partagé),applicative,2017,Poste de travail,6,1,0,APP02,doublon fusion
+APP12,Site de la ville,Saint-Denis,Communication,Informations et démarches en ligne,applicative,2021,Cloud éditeur,0,3,29,APP01;APP07;APP08,en service
+APP13,Annuaire des agents,Saint-Denis,Socle,Comptes et droits des agents,technique,2010,Serveur municipal,1500,3,12,APP03;APP08,en service
+APP14,Gestion financière,Saint-Denis,Finances,Comptabilité et budget,applicative,2008,Serveur municipal,70,2,61,APP05,à moderniser
+APP15,Ressources humaines SD,Saint-Denis,RH,Paie et carrières,applicative,2012,Cloud éditeur,40,3,55,APP13,en service
+APP16,Ressources humaines Pierrefitte,Pierrefitte,RH,Paie et carrières,applicative,2011,Serveur municipal,6,2,13,,doublon fusion
+APP17,Élections,Saint-Denis,État civil,Listes électorales,applicative,2014,Serveur municipal,6,3,9,APP01,en service
+APP18,Réservation de salles,Saint-Denis,Vie associative,Prêt de salles aux associations,applicative,2019,Cloud éditeur,15,4,7,APP12,en service
+APP19,Messagerie,Saint-Denis,Socle,Messagerie des agents,technique,2017,Cloud éditeur,1500,4,48,APP13,en service
+APP20,Base adresses,Plaine Commune,Socle,Référentiel des adresses du territoire,technique,2016,Cloud Plaine Commune,0,4,0,APP07;APP09,partagé EPT

@@ -1,0 +1,10 @@
+# Séance 2 — Prise en main de l'environnement et cas d'usage de l'IA
+langchain>=1.0
+langchain-openai>=1.0
+langgraph>=1.0
+pydantic>=2
+python-dotenv
+jupyter
+pandas
+matplotlib
+requests
